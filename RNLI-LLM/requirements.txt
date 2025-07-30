@@ -1,0 +1,6 @@
+openai-whisper
+# For CUDA GPU support, use torch with CUDA (see https://pytorch.org/get-started/locally/)
+torch
+# Optional for audio manipulation
+pydub
+# Optional: faster-whisper (alternative Whisper implementation) 
