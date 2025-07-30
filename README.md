@@ -1,2 +1,3 @@
 # RNLI-LLM
-AI-powered maritime emergency assistant for real-time analysis of distress calls. Transcribes audio, detects urgency, extracts incident data, and recommends optimal lifeboat deployment using LLMs, machine learning, and real-time marine data.
+To run set host google/gemma-3n-e4b in the developer tab and run the code.
+to run with differnt LLMs change model name in call_mistral function.
