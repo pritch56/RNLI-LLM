@@ -22,7 +22,7 @@ Audio Input → Whisper Transcription → LLM Analysis → Structured JSON Outpu
 - **`LLM.py`**: Processes transcripts and extracts structured information
 - **Audio files**: Test distress call recordings (M4A/WAV formats)
 
-## 📋 Features
+## Features
 
 ### Current Implementation
 - Multi-format audio support (M4A, WAV, MP3, etc.)
