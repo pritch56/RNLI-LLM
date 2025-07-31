@@ -80,17 +80,20 @@ def call_mistral(transcript):
     # Extract the content (model output) from the response
     content = result["choices"][0]["message"]["content"]
     
-    # Find and parse the first JSON object in the output
-    try:
-        json_start = content.index('{')
-        json_data = json.loads(content[json_start:])
-    except ValueError:
-        print("No JSON found in model output. Output was:\n", content)
+    # Find and parse the first JSON object in the output using regex for robustness
+    import re
+    json_match = re.search(r'\{[\s\S]*\}', content)
+    if not json_match:
+        print("No JSON found in model output. Here is the full output from the LLM:\n")
+        print("----- LLM OUTPUT START -----")
+        print(content)
+        print("----- LLM OUTPUT END -----")
         sys.exit(1)
+    try:
+        json_data = json.loads(json_match.group(0))
     except json.JSONDecodeError:
         print("Model output was not valid JSON. Output was:\n", content)
         sys.exit(1)
-    
     return json_data
 
 
@@ -100,7 +103,9 @@ def main():
     sends it to the LLM, and prints the structured JSON result.
     """
     # Always use 'output/output.txt' as the input file
-    input_file = 'output/output.txt'
+    input_file = 'RNLI-LLM/output/output.txt'
+    import time
+    start_time = time.time()
     try:
         with open(input_file, 'r', encoding='utf-8') as f:
             transcript = f.read()
@@ -110,10 +115,17 @@ def main():
     except Exception as e:
         print(f"Error reading {input_file}: {e}")
         sys.exit(1)
-    
-    # Call the LLM and print the result as pretty JSON
+
+    # Call the LLM and print the result as JSON
     data = call_mistral(transcript)
+    # Write JSON output to file
+    output_json_path = 'RNLI-LLM/output/output.json'
+    with open(output_json_path, 'w', encoding='utf-8') as jf:
+        json.dump(data, jf, indent=2, ensure_ascii=False)
+    print(f"Structured JSON written to {output_json_path}")
     print(json.dumps(data, indent=2, ensure_ascii=False))
+    elapsed = time.time() - start_time
+    print(f"\n[Timer] LLM processing took {elapsed:.2f} seconds.")
 
 
 if __name__ == '__main__':

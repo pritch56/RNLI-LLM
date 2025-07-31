@@ -6,6 +6,7 @@ import subprocess  # For running ffmpeg
 import sys  # For exiting on error
 import tempfile  # For temporary file management
 
+
 # Try to import Whisper for speech-to-text
 try:
     import whisper
@@ -33,7 +34,13 @@ def convert_to_wav(input_path, output_path):
         '-ar', '16000', '-ac', '1', '-c:a', 'pcm_s16le', output_path
     ]
     # Run ffmpeg to convert the audio file
-    subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+    try:
+        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+    except subprocess.CalledProcessError as e:
+        print("FFmpeg failed with error code:", e.returncode)
+        print("FFmpeg stderr output:")
+        print(e.stderr.decode(errors='replace'))
+        sys.exit(1)
 
 
 def transcribe_audio(input_audio, output_txt, output_srt=None, output_vtt=None, model_size='large', language=None):
@@ -88,6 +95,8 @@ def main():
     parser.add_argument('--language', default=None, help="Force language (e.g., 'en'). Default: auto-detect.")
     args = parser.parse_args()
 
+    import time
+    start_time = time.time()
     # Convert input to WAV if needed, using a temporary directory
     with tempfile.TemporaryDirectory() as tmpdir:
         wav_path = os.path.join(tmpdir, 'converted.wav')
@@ -105,6 +114,8 @@ def main():
             model_size=args.model,
             language=args.language
         )
+    elapsed = time.time() - start_time
+    print(f"\n[Timer] Transcription process took {elapsed:.2f} seconds.")
 
 
 if __name__ == '__main__':
