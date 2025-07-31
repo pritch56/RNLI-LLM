@@ -1,4 +1,25 @@
 # Folder Structure Update
+## Transcription Options: With and Without FFmpeg
+
+You can transcribe audio using either of the following scripts:
+
+- **With FFmpeg (for maximum compatibility):**
+  - Use `transcribe_audio.py` to handle any audio format (M4A, MP3, WAV, etc.).
+  - This script automatically converts audio to 16kHz mono WAV using FFmpeg before transcription.
+  - **Example:**
+    ```bash
+    python RNLI-LLM/transcribe_audio.py input/your_audio.m4a output/your_transcript.txt
+    ```
+
+- **Without FFmpeg:**
+  - Use `Transcript-bl.py` if your audio is already in a format natively supported by Whisper (e.g., WAV, MP3, FLAC, M4A).
+  - This script does not perform any conversion—audio is passed directly to Whisper.
+  - **Example:**
+    ```bash
+    python RNLI-LLM/Transcript-bl.py input/your_audio.wav output/your_transcript.txt
+    ```
+
+Choose the script that best fits your workflow and input file types. If unsure, use the FFmpeg version for best compatibility.
 
 Audio samples should be placed in the `RNLI-LLM/input/` folder.
 All output files (transcripts, JSON, subtitles, etc.) will be written to the `RNLI-LLM/output/` folder.
