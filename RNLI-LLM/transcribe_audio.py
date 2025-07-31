@@ -80,10 +80,10 @@ def main():
     Main entry point: parses arguments, converts input audio to WAV, and transcribes it.
     """
     parser = argparse.ArgumentParser(description="Transcribe audio using OpenAI Whisper (commercial-grade accuracy)")
-    parser.add_argument('input_audio', help="Path to input audio file (any format)")
-    parser.add_argument('output_txt', help="Path to output .txt file for transcription")
-    parser.add_argument('--srt', help="Optional: Output SRT subtitle file")
-    parser.add_argument('--vtt', help="Optional: Output VTT subtitle file")
+    parser.add_argument('input_audio', help="Path to input audio file (any format) in the 'input/' folder")
+    parser.add_argument('output_txt', help="Path to output .txt file for transcription in the 'output/' folder")
+    parser.add_argument('--srt', help="Optional: Output SRT subtitle file in the 'output/' folder")
+    parser.add_argument('--vtt', help="Optional: Output VTT subtitle file in the 'output/' folder")
     parser.add_argument('--model', default='large', help="Whisper model size: tiny, base, small, medium, large (default: large)")
     parser.add_argument('--language', default=None, help="Force language (e.g., 'en'). Default: auto-detect.")
     args = parser.parse_args()

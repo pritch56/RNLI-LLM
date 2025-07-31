@@ -99,8 +99,8 @@ def main():
     Main entry point: reads the transcript from 'output.txt',
     sends it to the LLM, and prints the structured JSON result.
     """
-    # Always use 'output.txt' as the input file
-    input_file = 'output.txt'
+    # Always use 'output/output.txt' as the input file
+    input_file = 'output/output.txt'
     try:
         with open(input_file, 'r', encoding='utf-8') as f:
             transcript = f.read()

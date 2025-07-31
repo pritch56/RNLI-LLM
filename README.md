@@ -1,3 +1,16 @@
+# Folder Structure Update
+
+Audio samples should be placed in the `RNLI-LLM/input/` folder.
+All output files (transcripts, JSON, subtitles, etc.) will be written to the `RNLI-LLM/output/` folder.
+
+Update your commands accordingly, for example:
+
+```
+python RNLI-LLM/transcribe_audio.py input/Test_distress_call.wav output/output.txt
+```
+
+The main LLM script will now read from `output/output.txt`.
+
 # RNLI-LLM: Maritime Distress Call Analysis System
 
 A Python-based system for transcribing and analyzing maritime distress calls using OpenAI Whisper for speech-to-text conversion and a local LLM (Mistral/Gemma) for structured information extraction.
