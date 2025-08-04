@@ -14,7 +14,7 @@ You are an expert maritime SAR operator. Extract the following details from the 
 Return only valid, indented JSON with the following fields:
 - ship_name
 - position  # Can be GPS coordinates or bearing/distance from a known landmark
-- number_of_people
+- number_of_people 
 - injuries  # Number and type, if any
 - distress_type  # e.g., fire, sinking, MOB, engine failure
 - boat_name  # Same as ship_name, if not explicitly different

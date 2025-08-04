@@ -1,11 +1,123 @@
 {
-  "transcript": "Mayday, Mayday, Mayday. This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.",
-  "expected": {
-    "ship_name": "Sea Turtle",
-    "position": "five miles west of Catalina Island",
-    "number_of_people": "3",
-    "injuries": "unknown",
-    "distress_type": "taking on water",
-    "boat_name": "Sea Turtle"
+  "one": {
+    "transcript": "Mayday, Mayday, Mayday. This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.",
+    "expected": {
+      "ship_name": "Sea Turtle",
+      "position": "five miles west of Catalina Island",
+      "number_of_people": "Three",
+      "injuries": "unknown",
+      "distress_type": "taking on water",
+      "boat_name": "Sea Turtle"
+    }
+  },
+  "two": {
+    "transcript": "This is Blue Horizon. We've run aground near the Needles Lighthouse. Two injured, five total onboard.",
+    "expected": {
+      "ship_name": "Blue Horizon",
+      "position": "near the Needles Lighthouse",
+      "number_of_people": "Five",
+      "injuries": "Two",
+      "distress_type": "run aground",
+      "boat_name": "Blue Horizon"
+    }
+  },
+  "three": {
+    "transcript": "Distress call from Lady Anne. We're adrift off the coast of Falmouth. No injuries. Crew of six. Engine failure.",
+    "expected": {
+      "ship_name": "Lady Anne",
+      "position": "off the coast of Falmouth",
+      "number_of_people": "Six",
+      "injuries": "0",
+      "distress_type": "Engine failure",
+      "boat_name": "Lady Anne"
+    }
+  },
+  "four": {
+    "transcript": "Pan-pan call. This is sailing vessel Aurora Dawn. We’re located approximately 53°N, 1°W. Water ingress under control. Four persons onboard.",
+    "expected": {
+      "ship_name": "Aurora Dawn",
+      "position": "53°N, 1°W",
+      "number_of_people": "Four",
+      "injuries": "0",
+      "distress_type": "Water ingress",
+      "boat_name": "Aurora Dawn"
+    }
+  },
+  "five": {
+    "transcript": "Yeah hi, this is John from the fishing boat Bonnie Jean. We’ve lost power off Holyhead, no one's hurt, three of us total.",
+    "expected": {
+      "ship_name": "Bonnie Jean",
+      "position": "off Holyhead",
+      "number_of_people": "Three",
+      "injuries": "0",
+      "distress_type": "Lost power",
+      "boat_name": "Bonnie Jean"
+    }
+  },
+  "six": {
+    "transcript": "Vessel name unknown. Taking on water. Location unclear. Crew of unknown size. Please advise.",
+    "expected": {
+      "ship_name": "unknown",
+      "position": "unknown",
+      "number_of_people": "unknown",
+      "injuries": "unknown",
+      "distress_type": "taking on water",
+      "boat_name": "unknown"
+    }
+  },
+  "seven": {
+    "transcript": "This is Mayfly, hit something underwater, and we’re listing badly. Two adults, one child onboard. Unsure of exact position. Minor injuries reported.",
+    "expected": {
+      "ship_name": "Mayfly",
+      "position": "unknown",
+      "number_of_people": "Three",
+      "injuries": "Minor",
+      "distress_type": "collision",
+      "boat_name": "Mayfly"
+    }
+  },
+  "eight": {
+    "transcript": "SOS from catamaran Luna Tide. Position 49.3 N 2.1 W. One person unconscious. Total five crew. Taking on water fast.",
+    "expected": {
+      "ship_name": "Luna Tide",
+      "position": "49.3 N 2.1 W",
+      "number_of_people": "Five",
+      "injuries": "One unconscious",
+      "distress_type": "Taking on water",
+      "boat_name": "Luna Tide"
+    }
+  },
+  "nine": {
+    "transcript": "Mayday Mayday Mayday – Yacht Seraphim requesting immediate tow. Engine failure, near Plymouth Harbour. Two aboard.",
+    "expected": {
+      "ship_name": "Seraphim",
+      "position": "near Plymouth Harbour",
+      "number_of_people": "Two",
+      "injuries": "0",
+      "distress_type": "Engine failure",
+      "boat_name": "Seraphim"
+    }
+  },
+  "ten": {
+    "transcript": "Fisherman here. No boat name given. We're drifting, GPS says 50°12'N, 1°45'W. Weather worsening. Four onboard. All safe.",
+    "expected": {
+      "ship_name": "unknown",
+      "position": "50°12'N, 1°45'W",
+      "number_of_people": "Four",
+      "injuries": "0",
+      "distress_type": "Drifting",
+      "boat_name": "unknown"
+    }
+  },
+  "eleven": {
+    "transcript": "Calling for help – this is Windchaser. Hit a submerged object near Brighton Pier. Taking on water. Three adults. No injuries reported.",
+    "expected": {
+      "ship_name": "Windchaser",
+      "position": "near Brighton Pier",
+      "number_of_people": "Three",
+      "injuries": "0",
+      "distress_type": "Hit submerged object",
+      "boat_name": "Windchaser"
+    }
   }
 }
