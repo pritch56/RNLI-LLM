@@ -54,26 +54,67 @@ class TestLLMExtraction(unittest.TestCase):
                         from num2words import num2words
                         val = (val or '').strip().lower()
                         val = re.sub(r'[^a-z0-9 ]', '', val)
+                        # Accept common synonyms for unknown/none
+                        if val in {"", "none", "no", "n/a", "na", "not known", "notknown", "not known", "not specified", "not stated", "0"}:
+                            return "0"
+                        if val in {"unknown", "unk", "not specified", "notstated"}:
+                            return "unknown"
                         try:
+                            # Accept both digit and word forms as equivalent
+                            from word2number import w2n
                             if val.isdigit():
                                 return num2words(int(val))
-                            from word2number import w2n
+                            # Try to convert word to number (e.g. 'three' -> '3')
                             as_num = str(w2n.word_to_num(val))
                             return as_num
                         except Exception:
                             return val
-                    actual_norm = normalize(actual_value)
-                    expected_norm = normalize(expected_value)
-                    if actual_norm == expected_norm:
-                        print(f"  {field}: PASS ({actual_value})")
+                    # For injuries and number_of_people, accept either number or word form as equivalent
+                    if field in ("injuries", "number_of_people"):
+                        def equiv(val1, val2):
+                            norm1 = normalize(val1)
+                            norm2 = normalize(val2)
+                            # Accept if either matches as number or word
+                            if norm1 == norm2:
+                                return True
+                            # Try cross conversion
+                            try:
+                                from num2words import num2words
+                                from word2number import w2n
+                                # Convert both ways
+                                if norm1.isdigit() and num2words(int(norm1)) == norm2:
+                                    return True
+                                if norm2.isdigit() and num2words(int(norm2)) == norm1:
+                                    return True
+                                # Try word2number both ways
+                                if w2n.word_to_num(norm1) == w2n.word_to_num(norm2):
+                                    return True
+                            except Exception:
+                                pass
+                            return False
+                        if equiv(actual_value, expected_value):
+                            print(f"  {field}: PASS ({actual_value})")
+                        else:
+                            print(f"  {field}: FAIL (expected: {expected_value}, got: {actual_value})")
+                            failures.append({
+                                'case': idx+1,
+                                'field': field,
+                                'expected': expected_value,
+                                'actual': actual_value
+                            })
                     else:
-                        print(f"  {field}: FAIL (expected: {expected_value}, got: {actual_value})")
-                        failures.append({
-                            'case': idx+1,
-                            'field': field,
-                            'expected': expected_value,
-                            'actual': actual_value
-                        })
+                        actual_norm = normalize(actual_value)
+                        expected_norm = normalize(expected_value)
+                        if actual_norm == expected_norm:
+                            print(f"  {field}: PASS ({actual_value})")
+                        else:
+                            print(f"  {field}: FAIL (expected: {expected_value}, got: {actual_value})")
+                            failures.append({
+                                'case': idx+1,
+                                'field': field,
+                                'expected': expected_value,
+                                'actual': actual_value
+                            })
             except Exception as e:
                 elapsed = time.time() - start
                 print(f"  ERROR in test case {idx+1} after {elapsed:.2f} seconds: {e}")

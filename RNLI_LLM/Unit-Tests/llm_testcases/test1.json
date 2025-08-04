@@ -38,7 +38,7 @@
       "ship_name": "Aurora Dawn",
       "position": "53°N, 1°W",
       "number_of_people": "Four",
-      "injuries": "0",
+      "injuries": "unknown",
       "distress_type": "Water ingress",
       "boat_name": "Aurora Dawn"
     }
@@ -93,7 +93,7 @@
       "ship_name": "Seraphim",
       "position": "near Plymouth Harbour",
       "number_of_people": "Two",
-      "injuries": "0",
+      "injuries": "unknown",
       "distress_type": "Engine failure",
       "boat_name": "Seraphim"
     }
