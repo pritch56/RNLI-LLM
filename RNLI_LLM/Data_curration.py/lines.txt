@@ -1,0 +1,73 @@
+1. Standard emergency, all info present
+"Mayday, Mayday, this is the Sea Breeze. We're at Forty-one degrees, thirty-eight minutes North, seventy degrees, fifty-seven minutes West. 
+We’ve got 4 people onboard, 2 with burns from an engine fire. We're taking on water fast."
+
+2. informal language
+"Yo this is Lucky Marlin — we’re about 3 miles southeast of Point Judith Light. There’s six of us, and one guy’s got a busted leg. 
+Engine just died and we’re drifting bad."
+
+3. Standard
+"Mayday from Aurora Dawn. Coordinates 48.8566 N, 2.3522 E. We’ve lost power, 5 souls on board. No one’s hurt, but we’re adrift."
+
+4. Very minimal info
+"Help. Boat sinking. Jenny Sue. Four aboard. Near Dungeness. Fast."
+
+done to here
+
+5. Non-English (French)
+"Mayday, mayday, ici le Marée Haute. On est à environ 12 kilomètres au nord du phare de Cordouan. On est sept à bord, deux blessés. 
+Le feu est à bord. Besoin d’aide immédiate."
+
+6. Non-English (Spanish)
+"Mayday, Mayday. Aquí el Esperanza Azul. Estamos cerca de Isla Mujeres, unos 10 kilómetros al este. 
+Somos cinco personas, uno con herida en la cabeza. Nos estamos hundiendo."
+
+7. Heavy use of nautical slang
+"Mayday Mayday, this is Whale Popper. We’re dead in the water, halfway to Block Island from Montauk. 
+Got four crew, one twisted their ankle hopping the transom. Looks like a cracked hull midships."
+
+8. MOB (Man Overboard), vague location
+"Mayday! This is Seagull's Nest. We lost one man overboard about 15 minutes ago, somewhere near buoy 3A. Four still on board. 
+No injuries otherwise."
+
+9. Sinking and fire mentioned
+"*Distress call from the Dawn Treader. Position 37.7749 N, 122.4194 W. We’re on fire and taking on water. 
+There are six of us, two have smoke inhalation."
+
+10. Duplicate names (boat vs. ship name)
+"This is the charter vessel Golden Fin, repeat, Golden Fin. We’ve got engine failure, approximately 6 miles NE of Catalina. 
+5 passengers, no injuries. This is urgent."
+
+11. False positive: Not a distress call
+"Yeah hey, this is Crabshack Queen, just checking in, we passed Buoy 12 about 10 minutes ago. No issues, all good."
+
+12. Ambiguous location reference
+"We’re about a half-day west of Port Angeles on The Fisherman's Wife. Got 3 onboard, one took a bad fall. Wind’s picking up, we lost steerage."
+
+13. No ship name given
+"Mayday. We’ve capsized. There are five of us clinging to the hull. Somewhere south of Sandy Hook, I think. One unconscious."
+
+14. Use of CB-style language
+"Breaker breaker this is Salty Dog, mayday mayday. We’re at 34 degrees 30 minutes North, 77 degrees 20 minutes West. Fire in the galley, over. 
+Got 3 POB, 1 burned bad."
+
+15. Coordinates in decimal form, not DMS
+"This is Ocean Pearl. Coordinates are 36.7783, -119.4179. Rudder's busted. 4 aboard, everyone okay. Requesting tow."
+
+16. Obscure injury and phrasing
+"We’re on the Puffin Haze, off Jones Beach. Man down with nitrogen narcosis from a dive. Got 2 more on board, both fine. Request evac."
+
+17. Chatty style, vague location
+"Hey coastguard — we’re on Gilligan's Dream, somewhere west of Fire Island, I guess? We’ve sprung a leak and my buddy’s got a gash on his leg. 
+Four of us. Need help fast."
+
+18. Numeric confusion (multiple numbers in same sentence)
+"This is Northlight, position 12 miles east of Montauk Point, four people onboard, two engines failed, one person hurt — broken arm."
+
+19. Multiple distress types
+"Mayday, Crimson Queen. We hit something — maybe a log — taking on water and can’t start the engine. Position: 38.8977 N, 77.0365 W. 
+Three souls aboard, one with head injury."
+
+20. Mismatched ship/boat name
+"This is the fishing vessel Old Timer, but the hull says Jenny Rae. We’re 5 miles offshore from Noyo Harbor. Fire in the engine compartment. 
+Two of us, one minor burn."
