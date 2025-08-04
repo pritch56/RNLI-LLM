@@ -1,0 +1,11 @@
+{
+  "transcript": "Mayday, Mayday, Mayday. This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.",
+  "expected": {
+    "ship_name": "Sea Turtle",
+    "position": "five miles west of Catalina Island",
+    "number_of_people": "3",
+    "injuries": "unknown",
+    "distress_type": "taking on water",
+    "boat_name": "Sea Turtle"
+  }
+}
