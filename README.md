@@ -45,6 +45,52 @@ This system is designed to assist maritime Search and Rescue (SAR) operations by
 
 The system can process various audio formats and extract key maritime distress information including vessel details, position, number of people on board, injuries, and type of distress.
 
+## Automated Testing
+
+This project includes a suite of automated tests to verify both transcription and information extraction accuracy. Tests are located in the `RNLI_LLM/Unit-Tests/` directory and cover:
+
+- **Transcription accuracy**: Compares Whisper-generated transcripts to expected results for a variety of real-world audio samples.
+- **LLM extraction**: Validates that the LLM correctly extracts structured information (ship name, position, injuries, etc.) from transcripts.
+
+### Running the Tests
+
+1. **Install test dependencies** (in addition to main requirements):
+   ```bash
+   pip install num2words word2number
+   ```
+2. **Run all tests** from the project root:
+   ```bash
+   python -m unittest discover RNLI_LLM/Unit-Tests
+   ```
+   Or run individual test files, e.g.:
+   ```bash
+   python RNLI_LLM/Unit-Tests/Transcribe_test.py
+   python RNLI_LLM/Unit-Tests/LLM_test.py
+   ```
+3. **Test data**: Test cases are defined in `inputs.json` (for transcription) and `llm_testcases/test1.json` (for LLM extraction).
+
+Test output and results are written to the `RNLI_LLM/Unit-Tests/bin/` directory.
+
+## Speaker Diarization (Who Spoke When)
+
+The system supports optional **speaker diarization** (labeling transcript segments by speaker) using [pyannote-audio](https://github.com/pyannote/pyannote-audio). This requires a Hugging Face account and access token.
+
+### How to Use Diarization
+
+1. **Install pyannote-audio**:
+   ```bash
+   pip install pyannote.audio
+   ```
+2. **Get a Hugging Face token**: [Create a free account](https://huggingface.co/join) and generate a token with access to `pyannote/speaker-diarization`.
+3. **Run transcription with diarization**:
+   ```bash
+   python RNLI_LLM/Transcript.py input/your_audio.wav output/your_transcript.txt --diarization output/diarized.txt --hf_token <YOUR_HF_TOKEN>
+   ```
+   - The diarized transcript will be saved to the file specified by `--diarization`.
+   - If `--hf_token` is omitted, set the `HUGGINGFACE_TOKEN` environment variable instead.
+
+**Note:** Diarization is only available in `Transcript.py` (not in the FFmpeg-based script). For more details, see comments in `Transcript.py`.
+
 ## Architecture
 
 ```
