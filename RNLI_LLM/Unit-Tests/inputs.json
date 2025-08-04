@@ -1,0 +1,10 @@
+[
+  {
+    "audio_path": "C:/RNLI-LLM-2/RNLI_LLM/input/Test_distress_call.wav",
+    "expected_transcript": "This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Test_distress_call.m4a",
+    "expected_transcript": "This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance."
+  }
+]

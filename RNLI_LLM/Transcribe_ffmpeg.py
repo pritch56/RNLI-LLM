@@ -58,11 +58,14 @@ def transcribe_audio(input_audio, output_txt, output_srt=None, output_vtt=None, 
     print(f"Loaded Whisper model: {model_size}")
     # Transcribe the audio file
     result = model.transcribe(input_audio, language=language, verbose=True, task='transcribe')
-    
-    # Write plain text output
-    with open(output_txt, 'w', encoding='utf-8') as f:
-        f.write(result['text'].strip() + '\n')
-    print(f"Transcription saved to {output_txt}")
+
+    transcript = result['text'].strip()
+
+    # Write plain text output if output_txt is provided
+    if output_txt:
+        with open(output_txt, 'w', encoding='utf-8') as f:
+            f.write(transcript + '\n')
+        print(f"Transcription saved to {output_txt}")
 
     # Write SRT subtitles if requested and supported
     if output_srt and write_srt:
@@ -80,6 +83,8 @@ def transcribe_audio(input_audio, output_txt, output_srt=None, output_vtt=None, 
 
     # Speaker diarization placeholder (not implemented)
     print("[Placeholder] Speaker diarization is not implemented. See README for extension options.")
+
+    return transcript
 
 
 def main():
