@@ -3,4 +3,16 @@ openai-whisper
 torch
 # Optional for audio manipulation
 pydub
+# Optional: faster-whisper (alternative Whisper implementation)
+whisper
+pyannote.audio
+num2words
+word2number
+numpy
+soundfile
+librosa
+transformers
+scipy
+requests
+pydub
 # Optional: faster-whisper (alternative Whisper implementation) 
