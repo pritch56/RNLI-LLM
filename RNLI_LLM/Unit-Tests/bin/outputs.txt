@@ -1,0 +1,90 @@
+
+========================================
+Testing Whisper model: tiny
+========================================
+AUDIO: C:/RNLI-LLM-2/RNLI_LLM/input/Test_distress_call.wav
+MODEL: tiny
+TIME: 1.46 sec
+TRANSCRIPT: This is the vessel sea turtle. We are taking water five miles west of Cataline Island. There are three crew and board request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+AUDIO: RNLI_LLM/input/Test_distress_call.m4a
+MODEL: tiny
+TIME: 1.26 sec
+TRANSCRIPT: This is the vessel sea turtle. We are taking water five miles west of Cataline Island. There are three crew and board request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+Total time for model 'tiny': 2.72 sec
+
+
+========================================
+Testing Whisper model: base
+========================================
+AUDIO: C:/RNLI-LLM-2/RNLI_LLM/input/Test_distress_call.wav
+MODEL: base
+TIME: 2.45 sec
+TRANSCRIPT: This is the vessel sea turtle. We are taking on water five miles west of Catalina Island. There are three crew and board request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+AUDIO: RNLI_LLM/input/Test_distress_call.m4a
+MODEL: base
+TIME: 3.75 sec
+TRANSCRIPT: This is the vessel sea turtle. We are taking on water five miles west of Catalina Island. There are three crew and board request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+Total time for model 'base': 6.20 sec
+
+
+========================================
+Testing Whisper model: small
+========================================
+AUDIO: C:/RNLI-LLM-2/RNLI_LLM/input/Test_distress_call.wav
+MODEL: small
+TIME: 9.69 sec
+TRANSCRIPT: This is the vessel sea turtle we are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+AUDIO: RNLI_LLM/input/Test_distress_call.m4a
+MODEL: small
+TIME: 7.12 sec
+TRANSCRIPT: This is the vessel sea turtle we are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+Total time for model 'small': 16.82 sec
+
+
+========================================
+Testing Whisper model: medium
+========================================
+AUDIO: C:/RNLI-LLM-2/RNLI_LLM/input/Test_distress_call.wav
+MODEL: medium
+TIME: 23.50 sec
+TRANSCRIPT: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+AUDIO: RNLI_LLM/input/Test_distress_call.m4a
+MODEL: medium
+TIME: 24.40 sec
+TRANSCRIPT: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+Total time for model 'medium': 47.90 sec
+
+
+========================================
+Testing Whisper model: large
+========================================
+AUDIO: C:/RNLI-LLM-2/RNLI_LLM/input/Test_distress_call.wav
+MODEL: large
+TIME: 44.24 sec
+TRANSCRIPT: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+AUDIO: RNLI_LLM/input/Test_distress_call.m4a
+MODEL: large
+TIME: 42.48 sec
+TRANSCRIPT: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+EXPECTED: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+
+Total time for model 'large': 86.72 sec
+
