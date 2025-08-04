@@ -1,0 +1,105 @@
+Test case 1
+AUDIO FILE: C:/RNLI-LLM-2/RNLI_LLM/input/Test_distress_call.wav
+EXPECTED TRANSCRIPT: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+ACTUAL TRANSCRIPT: This is the vessel sea turtle. We are taking on water five miles west of Catalina Island. There are three crew and board request immediate assistance.
+
+Test case 2
+AUDIO FILE: RNLI_LLM/input/Test_distress_call.m4a
+EXPECTED TRANSCRIPT: This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance.
+ACTUAL TRANSCRIPT: This is the vessel sea turtle. We are taking on water five miles west of Catalina Island. There are three crew and board request immediate assistance.
+
+Test case 3
+AUDIO FILE: RNLI_LLM/input/Standard_emergency_all_info_present.m4a
+EXPECTED TRANSCRIPT: Mayday, Mayday, this is the Sea Breeze. We're at Forty-one degrees, thirty-eight minutes North, seventy degrees, fifty-seven minutes West. We’ve got 4 people onboard, 2 with burns from an engine fire. We're taking on water fast.
+ACTUAL TRANSCRIPT: Mayday, Mayday, this is the sea breeze. We're at 41 degrees 38 minutes north, 70 degrees 57 minutes west. We've got four people on board, two with burns from an engine fire. We're taking on water fast.
+
+Test case 4
+AUDIO FILE: RNLI_LLM/input/Informal_language.m4a
+EXPECTED TRANSCRIPT: Yo this is Lucky Marlin — we’re about 3 miles southeast of Point Judith Light. There’s six of us, and one guy’s got a busted leg. Engine just died and we’re drifting bad.
+ACTUAL TRANSCRIPT: Yo, this is Lucky Marlin. We're about three miles southeast of the point Judith Light, the six of us and one guy's got a busted leg. Engine just died and we're drifting bad.
+
+Test case 5
+AUDIO FILE: RNLI_LLM/input/Standard.m4a
+EXPECTED TRANSCRIPT: Mayday from Aurora Dawn. Coordinates 48.8566 N, 2.3522 E. We’ve lost power, 5 souls on board. No one’s hurt, but we’re adrift.
+ACTUAL TRANSCRIPT: Mayday from Aurora down, coordinates 48.8566 north, 2.3522 east. We've lost power, 5,000 board, no one's hurt but we're adrift.
+
+Test case 6
+AUDIO FILE: RNLI_LLM/input/Minimal_info.m4a
+EXPECTED TRANSCRIPT: Help. Boat sinking. Jenny Sue. Four aboard. Near Dungeness. Fast.
+ACTUAL TRANSCRIPT: Help, boat sinking, Jenny-C for aboard, near dungeon-ness, fast.
+
+Test case 7
+AUDIO FILE: RNLI_LLM/input/Nautical_slang.m4a
+EXPECTED TRANSCRIPT: Mayday Mayday, this is Whale Popper. We’re dead in the water, halfway to Block Island from Montauk. Got four crew, one twisted their ankle hopping the transom. Looks like a cracked hull midships.
+ACTUAL TRANSCRIPT: Mayday, Mayday. This is Whale Puppa. We're dead in the water halfway to Block Island from Montaq. Got four crew, one Twitter their ankle hopping their transform. Looks like a cracked hoe midship.
+
+Test case 8
+AUDIO FILE: RNLI_LLM/input/Mob.m4a
+EXPECTED TRANSCRIPT: Mayday! This is Seagull's Nest. We lost one man overboard about 15 minutes ago, somewhere near buoy 3A. Four still on board. No injuries otherwise.
+ACTUAL TRANSCRIPT: Mayday, this is Seagull's Nest, we lost one man overboard about 15 minutes ago. Somewhere near Boy 3A, forcing on board, no injuries otherwise.
+
+Test case 9
+AUDIO FILE: RNLI_LLM/input/Fire_sinking.m4a
+EXPECTED TRANSCRIPT: Distress call from the Dawn Treader. Position 37.7749 N, 122.4194 W. We’re on fire and taking on water. There are six of us, two have smoke inhalation.
+ACTUAL TRANSCRIPT: This is Dawn Trader, position 37.7749 North, 1-22.4194 West. We're on fire and taking on water. The rest takes up as to have a smoke in elation.
+
+Test case 10
+AUDIO FILE: RNLI_LLM/input/Duplicate_names.m4a
+EXPECTED TRANSCRIPT: This is the charter vessel Golden Fin, repeat, Golden Fin. We’ve got engine failure, approximately 6 miles NE of Catalina. 5 passengers, no injuries. This is urgent.
+ACTUAL TRANSCRIPT: This is the Charter vessel, Godenfin, repeat, Godenfin. We've got engine failure. I approximately six miles north of Catalina. Five passengers, no injuries. This is urgent.
+
+Test case 11
+AUDIO FILE: RNLI_LLM/input/False_call.m4a
+EXPECTED TRANSCRIPT: Yeah hey, this is Crabshack Queen, just checking in, we passed Buoy 12 about 10 minutes ago. No issues, all good.
+ACTUAL TRANSCRIPT: Yeah, hey, this is CrabShack Cream just checking in with past boy 12 about 10 minutes ago. No issues. All good
+
+Test case 12
+AUDIO FILE: RNLI_LLM/input/Ambiguous_location.m4a
+EXPECTED TRANSCRIPT: We’re about a half-day west of Port Angeles on The Fisherman's Wife. Got 3 onboard, one took a bad fall. Wind’s picking up, we lost steerage.
+ACTUAL TRANSCRIPT: We're about a half day west of Port Angels on the Fisherman's wife got three on board one took a bad full winds picking up we lost steerage
+
+Test case 13
+AUDIO FILE: RNLI_LLM/input/No_ship_name.m4a
+EXPECTED TRANSCRIPT: Mayday. We’ve capsized. There are five of us clinging to the hull. Somewhere south of Sandy Hook, I think. One unconscious.
+ACTUAL TRANSCRIPT: Mayday we've capsized there are five of us cleaning to the hole somewhere south of Sandi Hook. I think want it unconscious
+
+Test case 14
+AUDIO FILE: RNLI_LLM/input/CB_language.m4a
+EXPECTED TRANSCRIPT: Breaker breaker this is Salty Dog, mayday mayday. We’re at 34 degrees 30 minutes North, 77 degrees 20 minutes West. Fire in the galley, over. Got 3 POB, 1 burned bad.
+ACTUAL TRANSCRIPT: Breaker, Breaker, this is salty dog, Mayday Mayday. We're at 34 degrees, 30 minutes north, 77 degrees, 20 minutes west. Fire in the galley, over, got three people on board, one burned bad.
+
+Test case 15
+AUDIO FILE: RNLI_LLM/input/Decimal_cords.m4a
+EXPECTED TRANSCRIPT: This is Ocean Pearl. Coordinates are 36.7783, -119.4179. Rudder's busted. 4 aboard, everyone okay. Requesting tow.
+ACTUAL TRANSCRIPT: This is Ocean Power. Go on it's 36.7783 minus 119.4179 Riders busted. A 4-board, ever-n-ok, requesting 2.
+
+Test case 16
+AUDIO FILE: RNLI_LLM/input/Obscure_injury.m4a
+EXPECTED TRANSCRIPT: We’re on the Puffin Haze, off Jones Beach. Man down with nitrogen narcosis from a dive. Got 2 more on board, both fine. Request evac.
+ACTUAL TRANSCRIPT: We're on Puffin Hayes of June's Beach. Man down with Nighttross, Nighttross and Nicol Caesis from Adive got two more on board, both fine, request Evac.
+
+Test case 17
+AUDIO FILE: RNLI_LLM/input/Chatty_style.m4a
+EXPECTED TRANSCRIPT: Hey coastguard — we’re on Gilligan's Dream, somewhere west of Fire Island, I guess? We’ve sprung a leak and my buddy’s got a gash on his leg. Four of us. Need help fast.
+ACTUAL TRANSCRIPT: Hey Coast Guard, we're on Gilligan's Dream somewhere west of Fire Island, I guess. We've sprung a league and my body's got a gactionous leg, four of us need help fast.
+
+Test case 18
+AUDIO FILE: RNLI_LLM/input/Neumerical_confusion.m4a
+EXPECTED TRANSCRIPT: This is Northlight, position 12 miles east of Montauk Point, four people onboard, two engines failed, one person hurt — broken arm.
+ACTUAL TRANSCRIPT: This is Northern Light, position 12 miles east of Montac Point. Four people on board, two engines failed, one person hurt, broken arm.
+
+Test case 19
+AUDIO FILE: RNLI_LLM/input/Multiple_distress.m4a
+EXPECTED TRANSCRIPT: Mayday, Crimson Queen. We hit something — maybe a log — taking on water and can’t start the engine. Position: 38.8977 N, 77.0365 W. Three souls aboard, one with head injury.
+ACTUAL TRANSCRIPT: Mayday Crimson Queen. We've hit something, maybe a log, taking on water and can't start the engine. Position 38.8977 North 77.0365 West. Three cells on board. One with head injury.
+
+Test case 20
+AUDIO FILE: RNLI_LLM/input/Name_confusion.m4a
+EXPECTED TRANSCRIPT: This is the fishing vessel Old Timer, but the hull says Jenny Rae. We’re 5 miles offshore from Noyo Harbor. Fire in the engine compartment. Two of us, one minor burn.
+ACTUAL TRANSCRIPT: This is the fishing vessel Old Timber, but the hull says Jenny Ray, with 5 miles of shore from Neuho Harbour. Fire in the engine compartment, two of us, one minor burn.
+
+Test case 21
+AUDIO FILE: RNLI_LLM/input/LOTTIE.m4a
+EXPECTED TRANSCRIPT: Lottie to Coast Guard! Lottie to Coast Guard! Mayday, mayday, mayday! This is the vessle lottie! We are taking on water, repeat, TAKING ON WATER, port side hull breach, we’ve lost power and the bilge is not keeping up! There are six souls onboard, including one injured! Coordinates—uh, 32 degrees 47 minutes North, 117 degrees 15 West—twenty miles off Exeter. we need assistance IMMEDIATELY, visibility’s dropping—we’re listing—LIFE RAFT’S BEEN DEPLOYED but we’re still aboard—WE MAY HAVE TO ABANDON SHIP!
+ACTUAL TRANSCRIPT: Lotty to coast guard, lots of to coast guard, mayday, mayday, this is the vessel lotty we are taking on water, taking on water, port size held breach with lost power and the bill just not keeping up. There are six souls on board, including one injured, coordinates are 32 degrees, 47 minutes north, 170 degrees, 15 west, 20 miles of exeter, we need assistance immediately, visibility is dropping, we're listening life has been deployed, but we're still aboard, we may have to abandon ship.
+

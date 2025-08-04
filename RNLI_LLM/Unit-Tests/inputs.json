@@ -1,0 +1,86 @@
+[
+  {
+    "audio_path": "C:/RNLI-LLM-2/RNLI_LLM/input/Test_distress_call.wav",
+    "expected_transcript": "This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Test_distress_call.m4a",
+    "expected_transcript": "This is the vessel Sea Turtle. We are taking on water five miles west of Catalina Island. There are three crew on board, request immediate assistance."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Standard_emergency_all_info_present.m4a",
+    "expected_transcript": "Mayday, Mayday, this is the Sea Breeze. We're at Forty-one degrees, thirty-eight minutes North, seventy degrees, fifty-seven minutes West. We’ve got 4 people onboard, 2 with burns from an engine fire. We're taking on water fast."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Informal_language.m4a",
+    "expected_transcript": "Yo this is Lucky Marlin — we’re about 3 miles southeast of Point Judith Light. There’s six of us, and one guy’s got a busted leg. Engine just died and we’re drifting bad."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Standard.m4a",
+    "expected_transcript": "Mayday from Aurora Dawn. Coordinates 48.8566 N, 2.3522 E. We’ve lost power, 5 souls on board. No one’s hurt, but we’re adrift."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Minimal_info.m4a",
+    "expected_transcript": "Help. Boat sinking. Jenny Sue. Four aboard. Near Dungeness. Fast."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Nautical_slang.m4a",
+    "expected_transcript": "Mayday Mayday, this is Whale Popper. We’re dead in the water, halfway to Block Island from Montauk. Got four crew, one twisted their ankle hopping the transom. Looks like a cracked hull midships."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Mob.m4a",
+    "expected_transcript": "Mayday! This is Seagull's Nest. We lost one man overboard about 15 minutes ago, somewhere near buoy 3A. Four still on board. No injuries otherwise."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Fire_sinking.m4a",
+    "expected_transcript": "Distress call from the Dawn Treader. Position 37.7749 N, 122.4194 W. We’re on fire and taking on water. There are six of us, two have smoke inhalation."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Duplicate_names.m4a",
+    "expected_transcript": "This is the charter vessel Golden Fin, repeat, Golden Fin. We’ve got engine failure, approximately 6 miles NE of Catalina. 5 passengers, no injuries. This is urgent."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/False_call.m4a",
+    "expected_transcript": "Yeah hey, this is Crabshack Queen, just checking in, we passed Buoy 12 about 10 minutes ago. No issues, all good."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Ambiguous_location.m4a",
+    "expected_transcript": "We’re about a half-day west of Port Angeles on The Fisherman's Wife. Got 3 onboard, one took a bad fall. Wind’s picking up, we lost steerage."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/No_ship_name.m4a",
+    "expected_transcript": "Mayday. We’ve capsized. There are five of us clinging to the hull. Somewhere south of Sandy Hook, I think. One unconscious."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/CB_language.m4a",
+    "expected_transcript": "Breaker breaker this is Salty Dog, mayday mayday. We’re at 34 degrees 30 minutes North, 77 degrees 20 minutes West. Fire in the galley, over. Got 3 POB, 1 burned bad."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Decimal_cords.m4a",
+    "expected_transcript": "This is Ocean Pearl. Coordinates are 36.7783, -119.4179. Rudder's busted. 4 aboard, everyone okay. Requesting tow."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Obscure_injury.m4a",
+    "expected_transcript": "We’re on the Puffin Haze, off Jones Beach. Man down with nitrogen narcosis from a dive. Got 2 more on board, both fine. Request evac."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Chatty_style.m4a",
+    "expected_transcript": "Hey coastguard — we’re on Gilligan's Dream, somewhere west of Fire Island, I guess? We’ve sprung a leak and my buddy’s got a gash on his leg. Four of us. Need help fast."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Neumerical_confusion.m4a",
+    "expected_transcript": "This is Northlight, position 12 miles east of Montauk Point, four people onboard, two engines failed, one person hurt — broken arm."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Multiple_distress.m4a",
+    "expected_transcript": "Mayday, Crimson Queen. We hit something — maybe a log — taking on water and can’t start the engine. Position: 38.8977 N, 77.0365 W. Three souls aboard, one with head injury."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/Name_confusion.m4a",
+    "expected_transcript": "This is the fishing vessel Old Timer, but the hull says Jenny Rae. We’re 5 miles offshore from Noyo Harbor. Fire in the engine compartment. Two of us, one minor burn."
+  },
+  {
+    "audio_path": "RNLI_LLM/input/LOTTIE.m4a",
+    "expected_transcript": "Lottie to Coast Guard! Lottie to Coast Guard! Mayday, mayday, mayday! This is the vessle lottie! We are taking on water, repeat, TAKING ON WATER, port side hull breach, we’ve lost power and the bilge is not keeping up! There are six souls onboard, including one injured! Coordinates—uh, 32 degrees 47 minutes North, 117 degrees 15 West—twenty miles off Exeter. we need assistance IMMEDIATELY, visibility’s dropping—we’re listing—LIFE RAFT’S BEEN DEPLOYED but we’re still aboard—WE MAY HAVE TO ABANDON SHIP!"
+  }
+]
