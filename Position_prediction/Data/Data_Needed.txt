@@ -1,0 +1,59 @@
+⚓ 1. Boat-Specific Data
+These define how the specific boat behaves in water.
+
+Boat name / identifier (to look up real-time AIS or historical data)
+
+Boat type (e.g., cargo, sailboat, fishing, military)
+
+Hull type and size (displacement hull, planing hull, length, beam, draft)
+
+Engine type and power (sail, motor, hybrid)
+
+Maximum and current speed
+
+Maneuverability characteristics
+
+Weight / load
+
+Autopilot system or navigation strategy (if known)
+
+🌍 2. Initial State Data
+Snapshot of the boat at the current moment.
+
+Current position (latitude, longitude)
+
+Current speed (knots)
+
+Current heading (degrees)
+
+Timestamp of current position
+
+🌊 3. Environmental Conditions
+Dynamic and can change rapidly. Must be factored in from reliable real-time or historical sources.
+
+Wind speed and direction
+
+Wave height and direction
+
+Current (oceanic) speed and direction
+
+Tides (level and direction)
+
+Water depth (bathymetry)
+
+Temperature and salinity (may affect buoyancy, especially for submarines or small boats)
+
+Weather systems (e.g., storms, fronts)
+
+🛰️ 6. Data Sources / Integration
+To implement this system in real life, you'll need access to:
+
+AIS data feeds (MarineTraffic, AISHub, etc.)
+
+Weather APIs (NOAA, OpenWeatherMap, Windy, etc.)
+
+Ocean current data (HYCOM, Copernicus)
+
+Tide prediction services
+
+Map data and geofencing APIs (Google Maps, OpenSeaMap)
