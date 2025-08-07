@@ -5,7 +5,7 @@ import requests  # For making HTTP requests to the LLM API
 import sys  # For system exit and error handling
 
 # URL for the local Mistral (or compatible) LLM API endpoint
-MISTRAL_API_URL = "http://localhost:1234/v1/chat/completions"  # Change to your endpoint if needed
+MISTRAL_API_URL = "http://127.0.0.1:1234/v1/chat/completions"  # Change to your endpoint if needed
 
 # Prompt template for instructing the LLM to extract structured SAR information from a transcript
 PROMPT_TEMPLATE = """
@@ -103,7 +103,7 @@ def main():
     sends it to the LLM, and prints the structured JSON result.
     """
     # Always use 'output/output.txt' as the input file
-    input_file = 'RNLI-LLM/output/output.txt'
+    input_file = 'RNLI_LLM/output/output.txt'
     import time
     start_time = time.time()
     try:
@@ -119,7 +119,7 @@ def main():
     # Call the LLM and print the result as JSON
     data = call_mistral(transcript)
     # Write JSON output to file
-    output_json_path = 'RNLI-LLM/output/output.json'
+    output_json_path = 'RNLI_LLM/output/output.json'
     with open(output_json_path, 'w', encoding='utf-8') as jf:
         json.dump(data, jf, indent=2, ensure_ascii=False)
     print(f"Structured JSON written to {output_json_path}")

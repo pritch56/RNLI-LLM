@@ -15,4 +15,5 @@ transformers
 scipy
 requests
 pydub
+SpeechRecognition
 # Optional: faster-whisper (alternative Whisper implementation) 

@@ -1,26 +1,26 @@
 {
   "ship_name": {
-    "value": "Sea Wanderer",
-    "confidence": 0.98
+    "value": "Lottie",
+    "confidence": 1.0
   },
   "position": {
-    "value": "50 degrees 43 minutes North, 0 degrees 12 minutes East",
-    "confidence": 0.95
+    "value": "32 degrees 47 minutes North, 117 degrees 15 West; 20 miles off Exeter",
+    "confidence": 1.0
   },
   "number_of_people": {
-    "value": "4",
-    "confidence": 0.99
+    "value": "6",
+    "confidence": 1.0
   },
   "injuries": {
-    "value": "0",
+    "value": "1 injured",
     "confidence": 1.0
   },
   "distress_type": {
-    "value": "Taking on water",
-    "confidence": 0.95
+    "value": "Taking on water, hull breach, loss of power, bilge not keeping up",
+    "confidence": 1.0
   },
   "boat_name": {
-    "value": "Sea Wanderer",
-    "confidence": 0.98
+    "value": "Lottie",
+    "confidence": 1.0
   }
 }

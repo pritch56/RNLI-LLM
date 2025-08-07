@@ -4,7 +4,7 @@ import os
 import sys
 import json
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from Transcript import transcribe_audio
+from RNLI_LLM.Main.Transcript import transcribe_audio
 
 class TestAudioTranscriberFromJson(unittest.TestCase):
     def test_transcription_matches_expected(self):
